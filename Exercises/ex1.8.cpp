@@ -9,11 +9,10 @@ int main() {
     double hours, minutes, seconds, kilograms;
 
     cout << "Enter time: (hours, minutes, seconds) " << endl;
-    cin >> hours, minutes, seconds;
-
-    
-    minutes = hours * 60;       //minutos em horas
-    seconds = minutes * 60;     // segundos em minutos
+    cin >> hours >> minutes >> seconds;
+   
+    minutes += hours * 60;       //minutos em horas
+    seconds += minutes * 60;     // segundos em minutos
 
     kilograms = (grocery/seconds);  //kilograma por segundo
 
